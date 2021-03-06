@@ -17,74 +17,68 @@
             .container {
                 display: grid;
                 margin: auto;
-                grid-template-columns: 450px 45px;
+                grid-template-columns: 20px 584px;
                 column-gap: 10px;
                 justify-content: center;
                 align-content: center;
                 align-items: center;
                 justify-items: center;
             }
-
-            #texto-busqueda {
-                height: 30px;
-                width: 400px;
-                border-radius: 50px;
-                font-size: 18px;
+            
+            .cabeza {
+                height: 48px;
             }
 
-            #boton-busqueda {
-                border-radius: 2px;
-                font-size: 20px;
-                background-color: rgba(164, 176, 182, 0.7);
+            #texto-busqueda {
+                height: 45px;
+                width: 584px;
+                border-radius: 50px;
+                font-size: 18px;
+                border: 1px solid;
+                color: #222
             }
         </style>
     </head>
 
     <header>
-        <ul>
-            <li>
-                <a href="#">Gmail</a>
-            </li>
-            <li>
-                <a href="#">Images</a>
-            </li>
-        </ul>
+        <div class="cabeza">
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li>
+                    <svg>
+                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                    </svg>
+                </li>
+                <li><img src="https://lh3.google.com/u/0/ogw/ADGmqu9kAO9ndW4XzwOSzZuhQuwdLDudtxXc_X_uTV0=s32-c-mo" alt=""></li>
+            </ul>
+        </div>
     </header>
     
     <body>
-        <div>
-            <img id="logo" src="googlelogo.png">
-        </div>
+        <div><img id="logo" src="googlelogo.png" alt="Google logo"></div>
         
         <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+            
             <input id="texto-busqueda" type="text">
-            <button id="boton-busqueda" type="submit">Search</button>
         </div>
+        
+        <button type="submit">Search</button>
+        <button type="submit">I'm feeling lucky</button>
     </body>
 
     <footer>
         <ul>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Advertisement</a>
-            </li>
-            <li>
-                <a href="#">Business</a>
-            </li>
-            <li>
-                <a href="#">How search works</a>
-            </li>
-            <li>
-                <a href="#">Privacy</a>
-            </li>
-            <li>
-                <a href="#">Conditions</a>
-            </li>
-            <li>
-                <a href="#">Preferences</a>
-            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Advertisement</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How search works</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Preferences</a></li>
         </ul>
     </footer>
 </html>
