@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #logo {
+                margin: 10px auto 15px auto;
+                display: block;
+            }
+            
+            .container {
+                display: grid;
+                margin: auto;
+                grid-template-columns: 450px 45px;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+            }
+
+            #texto-busqueda {
+                height: 20px;
+                width: 400px;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+
+            #boton-busqueda {
+                border-radius: 2px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <img id="logo" src="googlelogo.png">
+        </div>
+        
+        <div class="container">
+            <input id="texto-busqueda" type="text">
+            <button id="boton-busqueda" type="submit">Search</button>
+        </div>
+    </body>
+
+    <footer></footer>
+</html>
