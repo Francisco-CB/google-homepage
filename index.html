@@ -29,12 +29,21 @@
                 color: rgb(58, 58, 58);
             }
 
+            .container-top-bar {
+                display: grid;
+                grid-template-columns: 40px 40px 24px 24px;
+                column-gap: 25px;
+                justify-content: right;
+                align-content: center;
+                background-color: blue;
+            }
+
             #logo {
                 margin: 150px auto 15px auto;
                 display: block;
             }
             
-            .container {
+            .container-busqueda {
                 display: grid;
                 margin: auto;
                 grid-template-columns: 20px 584px;
@@ -45,8 +54,22 @@
                 justify-items: center;
             }
             
-            .cabeza {
-                height: 48px;
+            .container-botones {
+                display: grid;
+                margin-top: 0px;
+                margin-bottom: 80px;
+                grid-template-columns:  100px 150px;
+                column-gap: 25px;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                justify-items: center;
+            }
+            
+            .lupa {
+                position: relative;
+                left: 40px;
+                top: 65px;
             }
 
             .texto-busqueda {
@@ -58,45 +81,47 @@
                 color: #222
             }
 
-            footer {
-                background-color: #f1f1f1;
-            }
-
             .pie {
-                display:flex;
+                display: flex;
+                margin-top: 15px;
+                margin-bottom: 0px;
                 justify-content: space-between;
+                align-content: center;
                 background-color: #dddddd;
             }
         </style>
     </head>
 
     <header>
-        <div class="cabeza">
-            <ul>
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li>
-                    <svg>
-                        <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
-                    </svg>
-                </li>
-                <li><img src="https://lh3.google.com/u/0/ogw/ADGmqu9kAO9ndW4XzwOSzZuhQuwdLDudtxXc_X_uTV0=s32-c-mo" alt=""></li>
-            </ul>
+        <div class="container-top-bar">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <svg style="background-color: crimson;" focusable="false" viewBox="0px 0px 24px 24px">
+                <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,
+                2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,
+                2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,
+                2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,
+                2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+            </svg>
+            <img style="border-radius: 50%;" src="https://lh3.google.com/u/0/ogw/ADGmqu9kAO9ndW4XzwOSzZuhQuwdLDudtxXc_X_uTV0=s32-c-mo" alt="">
         </div>
     </header>
     
     <body>
         <div><img id="logo" src="googlelogo.png" alt="Google logo"></div>
         
-        <div class="container">
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-            </svg>
+        <div class="container-busqueda">
+            <div class="lupa">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0px 0px 24px 24px">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 
+                            4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+            </div>
             
             <input class="texto-busqueda" type="text">
         </div>
         
-        <div>
+        <div class="container-botones">
             <button type="submit">Search</button>
             <button type="submit">I'm feeling lucky</button>
         </div>
