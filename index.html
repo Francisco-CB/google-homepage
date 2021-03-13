@@ -9,6 +9,17 @@
                 color: #222
             }
             
+            button {
+                color: #3c4043;
+                text-align: center;
+                height: 36px;
+                padding: 11px 4px;
+                border: none;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                background-color: #f8f9fa;
+            }
+
             ul {
                 list-style-type: none;
                 text-align: center;
@@ -60,17 +71,21 @@
             .container-busqueda {
                 display: grid;
                 margin: auto;
+                border-radius: 24px;
+                border: 1px solid #dfe1e5;
+                max-width: 584px;
+                height: 44px;
+                background-color: transparent;
                 grid-template-columns: 20px 584px;
-                column-gap: 10px;
                 justify-content: center;
                 align-content: center;
                 align-items: center;
                 justify-items: center;
             }
-            
+
             .container-botones {
                 display: grid;
-                margin-top: 0px;
+                margin-top: 80px;
                 margin-bottom: 80px;
                 grid-template-columns:  100px 150px;
                 column-gap: 25px;
@@ -81,18 +96,21 @@
             }
             
             .lupa {
+                height: 26px;
+                width: 20px;
                 position: relative;
-                left: 40px;
-                top: 65px;
+                display: inline-block;
+                color: #9aa0a6;
+                background-color: darkblue;
             }
 
             .texto-busqueda {
-                height: 45px;
-                width: 584px;
-                border-radius: 50px;
+                height: 39px;
+                width: 528px;
+                outline: none;
+                border: none;
                 font-size: 18px;
-                border: 1px solid;
-                color: #222
+                color: rgba(0, 0, 0, 0.87);
             }
 
             .pie {
@@ -130,10 +148,12 @@
         
         <div class="container-busqueda">
             <div class="lupa">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0px 0px 24px 24px">
-                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 
+                <span style="color: #9aa0a6; fill: currentColor;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0px 0px 24px 24px">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 
                             4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                </svg>
+                    </svg>
+                </span>
             </div>
             
             <input class="texto-busqueda" type="text">
